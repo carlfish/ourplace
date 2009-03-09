@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+    "http://java.sun.com/j2ee/dtds/web-app_2.2.dtd">
+
+<web-app>
+    <servlet>
+        <servlet-name>
+		WikiController
+        </servlet-name>
+        <servlet-class>
+        	org.pastiche.wiki.WikiControllerServlet
+        </servlet-class>
+        <init-param>
+		<param-name>storageDir</param-name>
+		<param-value>/tmp/wikidb</param-value>
+	</init-param>
+        <init-param>
+		<param-name>storageFile</param-name>
+		<param-value>wiki</param-value>
+	</init-param>
+	<init-param>
+		<param-name>backupDir</param-name>
+		<param-value>/tmp/wikidb/backups</param-value>
+	</init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>
+        	WikiController
+        </servlet-name>
+        <url-pattern>
+        	/
+        </url-pattern>
+    </servlet-mapping>
+</web-app>
