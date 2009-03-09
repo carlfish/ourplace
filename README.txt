@@ -7,7 +7,7 @@ It was written in Java 1.2 (later 1.3?) against the Servlet 2.1 (later 2.2) spec
 
 The code is very basic. All the controller logic happens in a single if/then/else statement in the main servlet,
 it keeps the entire site in memory, the persistence mechanism is plain old Java serialization, and I hesitate
-to guess just how many concurrency bugs are lurking in it. Still, I wrote ot in two Sundays (one for the base wiki,
+to guess just how many concurrency bugs are lurking in it. Still, I wrote it in two Sundays (one for the base wiki,
 another to rewrite the wiki parser so I could more easily add new markup) and it managed to keep the handful of
 contributors to my website happy for a number of years.
 
